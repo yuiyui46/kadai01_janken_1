@@ -145,7 +145,7 @@ html, body {
 /* 基本スタイル */
 #awardMessage {
     text-align: center;
-    font-size: 30px; /* デフォルトのフォントサイズ */
+    font-size: 40px; /* デフォルトのフォントサイズ */
     padding: 10px;
 }
 
@@ -158,7 +158,7 @@ html, body {
 /* スマートフォン用のスタイル調整 */
 @media (max-width: 600px) {
     #awardMessage {
-        font-size: 25px; /* スマートフォンでは小さめのフォントサイズ */
+        font-size: 22px; /* スマートフォンでは小さめのフォントサイズ */
     }
 }
 
