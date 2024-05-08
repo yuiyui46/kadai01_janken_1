@@ -145,7 +145,7 @@ html, body {
 /* 基本スタイル */
 #awardMessage {
     text-align: center;
-    font-size: 40px; /* デフォルトのフォントサイズ */
+    font-size: 30px; /* デフォルトのフォントサイズ */
     padding: 10px;
 }
 
