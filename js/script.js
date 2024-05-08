@@ -49,7 +49,7 @@ const questions = [
             image:"img/hpv1.png"   
         },
         {
-            question: "Q7.日本のHPVワクチンの接種率は？海外の状況は？",
+            question: "Q7.日本のHPVワクチンの接種率は？",
             choices: ["30%", "10%", "5%", "2%"],
             correctAnswer: 3,
             explanation:"A7.<br>日本の接種率は2019年時点でわずか2%にとどまります。<br>2022年4月に約8年ぶりにHPVワクチンの積極的な接種勧奨が再開されました。<br>対して、国際的な動きはどうでしょう。<br>2020年11月時点で110カ国で公的な接種が行われ、カナダやイギリス、オーストラリアなどの接種率は約8割となっています。<br>子宮頸がんにつながるHPVの感染はHPVワクチン接種で防ぐことができます。速やかな接種率向上が望まれます。",
@@ -160,7 +160,7 @@ function displayScore() {
         message = "努力賞！<br>もう一度やってみよう！<br>目指せ！子宮頸がん検診博士！";
         imagePath = "img/doryoku.png";
     } else if (score > 30 && score <= 60) {
-        message = "惜しい！<br>子宮頸がん検診博士まであと少し！";
+        message = "惜しい！<br>子宮頸がん検診博士まで<br>あと少し！";
         imagePath = "img/oshii.png";
     } else if (score > 60) {
         message = "あなたはもう子宮頸がん検診博士！<br>周りの人にも教えてあげよう！";
