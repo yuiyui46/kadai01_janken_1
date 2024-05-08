@@ -5,7 +5,7 @@
 -子宮頸がん検診QUIZ　　
 
 # ③DEMO　　
--https://yuiyui46.github.io/kadai01_janken_1/　　
+https://yuiyui46.github.io/kadai01_janken_1/
 
 # ④作ったアプリケーション用のIDまたはPasswordがある場合　　
 -ID: 今回なし　　
