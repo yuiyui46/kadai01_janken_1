@@ -21,7 +21,7 @@
             color: #fff; /* テキストの色 */
             margin-top: 20px; /* 段落を下に移動 */
             padding: 5px 20px; /* パディングを調整してボタンのサイズを大きく */
-            font-size: 20px; /* フォントサイズを調整 */
+            font-size: 25px; /* フォントサイズを調整 */
             border: none;
             border-radius: 5px;
             cursor: pointer;
@@ -67,11 +67,11 @@
         #question {
             margin-top: 20px;
             height: 50px;
-            font-size: 20px;
+            font-size: 25px;
             color: #333;
-            text-align: left; /* 左寄せ */
-            
-        }
+            text-align: center; /* 中央揃え */
+            } 
+        
         
         /* 解説コメントのスタイル */
         #explanation {
@@ -187,9 +187,7 @@ html, body {
     margin: 10px auto; /* 自動的に左右のマージンを調整して中央揃え */
 }
 
-#question {
-    text-align: center; /* 中央揃え */
-}
+
 
 .responsive-image, #awardImage {
     margin: 20px auto; /* 画像を中央に配置 */
