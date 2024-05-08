@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <script src="js/jquery-2.1.3.min.js"></script>
+    <link rel="stylesheet" href="css/sample.css">
+    <link rel="icon" type="img/png" href="img/favi.png">
+    <title>子宮頸がん検診QUIZ</title>
+
+</head>
+
+<body>
+    <div id="quizContainer">
+    <h1>子宮頸がん検診Q&A</h1>
+    <p id="question"></p>
+    <button class="popup_button" onclick="selectButton(0);checkAnswer(0)"></button>
+    <button class="popup_button" onclick="selectButton(1);checkAnswer(1)"></button>
+    <button class="popup_button" onclick="selectButton(2);checkAnswer(2)"></button>
+    <button class="popup_button" onclick="selectButton(3);checkAnswer(3)"></button>
+    <br> <!-- 段落の下に改行を追加 -->
+    <button class="next_button" onclick="nextQuestion()">次へ</button> <!-- ここに「次へ」ボタンを追加 -->
+    <p id="explanation"></p> <!-- 解説コメントを表示する要素 -->
+
+    <!-- 表彰画面を表示するための要素 -->
+    <div id="awardScreen" class="hidden">
+        <h2 id="awardMessage"></h2>
+        <img id="awardImage" class="responsive-image">
+        <button class="restart_button" onclick="restartQuiz()">はじめから</button> <!-- ボタンを追加 -->
+    </div>
+    
+    <audio id="correctSound" src="mp3/hakusyu.mp3" preload="auto"></audio>
+    <audio id="incorrectSound" src="mp3/buu.mp3" preload="auto"></audio>
+
+    <script src="js/script.js"></script>
+    
+</body>
+</html>
