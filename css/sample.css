@@ -1,0 +1,198 @@
+        /* ボタンのスタイル */
+        .popup_button {
+            background-color: #e59ec1;
+            color: #ffffff;
+            border: none;
+            margin-top: 5px; /* 例えば、5pxに設定 */
+            padding: 5px 15px;
+            font-size: 25px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+    
+        .popup_button:hover {
+            background-color: #d876bc;
+        }
+
+        /* 「次へ」ボタンのスタイル */
+        .next_button {
+            background-color: #595757; /* 暗めの色 */
+            color: #fff; /* テキストの色 */
+            margin-top: 20px; /* 段落を下に移動 */
+            padding: 5px 20px; /* パディングを調整してボタンのサイズを大きく */
+            font-size: 20px; /* フォントサイズを調整 */
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .next_button:hover {
+            background-color: #201f1f;
+        }
+        .next_button:active {
+    transform: scale(0.95); /* クリックされたときに縮小 */
+    transition: transform 0.1s;
+}
+
+@media (max-width: 600px) {
+    .popup_button, .next_button, .restart_button {
+        font-size: 18px; /* 読みやすいサイズに */
+        padding: 15px 30px; /* 十分なパディング */
+        min-width: 150px; /* 最小幅を設定 */
+        min-height: 50px; /* 最小高さを設定 */
+    }
+}
+
+
+        .hidden {
+        display: none; /* 要素を非表示に設定 */
+    }
+
+        /* h1タグのスタイル */
+        h1 {
+    font-family: 'Comic Sans MS', 'Arial', sans-serif; /* フォントファミリー */
+    color: #efebec; /* フォントカラー */
+    text-align: center; /* 中央揃え */
+    font-size: 30px; /* フォントサイズ */
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.2); /* テキストに影をつける */
+    padding: 10px;
+    background-color: #f39a9a;
+    border-radius: 8px; /* 角を丸める */
+    margin: 20px auto; /* 上下にマージンを設定して、自動で左右中央揃え */
+    max-width: 80%; /* 最大幅を指定 */
+}
+
+
+        /* 質問コメントのスタイル */
+        #question {
+            margin-top: 20px;
+            height: 50px;
+            font-size: 20px;
+            color: #333;
+            text-align: left; /* 左寄せ */
+            
+        }
+        
+        /* 解説コメントのスタイル */
+        #explanation {
+            margin-top: 10px;
+            font-size: 18px;
+            color: #7d0808;
+            text-align: left; /* 左寄せ */
+            opacity: 0; /* 初期状態を透明に設定 */
+            transition: opacity 0.5s ease; /* opacityプロパティに対して0.5秒かけて変化させる */
+            margin-left: 50px; /* 左のマージンを20pxに設定 */
+            margin-right: 50px; /* 右のマージンを20pxに設定 */
+            overflow: auto; /* 内容がはみ出る場合はスクロールバーを表示 */
+}
+        #explanation img {
+            opacity: 0; /* 画像も初期状態を透明に設定 */
+            transition: opacity 0.5s ease; /* opacityプロパティに対して0.5秒かけて変化させる */
+        }
+/* 追加する画像のスタイル */
+       .responsive-image {
+        max-width:100%; /* 最大幅を画面幅に合わせる */
+        height: auto; /* 高さを自動調整 */
+        display: block; /* 画像をブロック要素として表示 */
+        margin: 0 left; /* 左揃え */
+    }
+/* HTMLとBodyの全体のマージンとパディングを0に設定 */
+html, body {
+    
+    text-align: center; /* すべてのテキストを中央揃え */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    height: 100%; /* 高さを100%に設定して、ビューポートを完全にカバー */
+    width: 100%; /* 幅を100%に設定 */
+    overflow-x: hidden; /* 横スクロールを無効にする */
+}
+
+        body {
+
+            background-image: url('../img/haikei1.png'); /* 背景画像のURLを指定 */
+            background-size:cover; /* 画面に合わせて背景画像を拡大縮小 */
+            background-position:bottom; /* 背景画像を中央に配置 */
+            background-repeat: no-repeat; /* 背景画像の繰り返しを禁止 */
+            background-attachment: fixed; /* 背景画像を固定 */
+        }
+        @media only screen and (max-width:600px) {
+            body {
+                background-attachment: scroll; /* 背景画像のスクロールを固定 */
+            }
+        }
+   
+
+#awardScreen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(237, 185, 185, 0.951); /* 背景を暗くする */
+    display: none; /* 初期状態では非表示 */
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 10;
+    color: white;
+    text-align: center; 
+}
+
+/* 基本スタイル */
+#awardMessage {
+    text-align: center;
+    font-size: 40px; /* デフォルトのフォントサイズ */
+    padding: 10px;
+}
+
+#awardImage {
+    width: 100%; /* 画像の幅を調整 */
+    height: auto; /* 高さは自動調整 */
+    max-width: 400px; /* 最大幅を設定 */
+}
+
+/* スマートフォン用のスタイル調整 */
+@media (max-width: 600px) {
+    #awardMessage {
+        font-size: 25px; /* スマートフォンでは小さめのフォントサイズ */
+    }
+}
+
+.restart_button {
+    padding: 10px 20px;
+    font-size: 22px;
+    color: white;
+    background-color: #4CAF50; /* 緑色 */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px; /* 余白を設定 */
+    margin-bottom: 20px;
+    transition: background-color 0.3s;
+}
+
+.restart_button:hover {
+    background-color: #45a049; /* ホバー時の色変更 */
+}
+
+.hidden {
+    display: none;
+}
+
+.popup_button, .next_button, .restart_button {
+    margin: 10px auto; /* 自動的に左右のマージンを調整して中央揃え */
+}
+
+#question {
+    text-align: center; /* 中央揃え */
+}
+
+.responsive-image, #awardImage {
+    margin: 20px auto; /* 画像を中央に配置 */
+    display: block; /* ブロックレベルで表示 */
+}
+
