@@ -36,8 +36,8 @@
 
 @media (max-width: 600px) {
     .popup_button, .next_button, .restart_button {
-        font-size: 18px; /* 読みやすいサイズに */
-        padding: 15px 30px; /* 十分なパディング */
+        font-size: 25px; /* 読みやすいサイズに */
+        padding: 5px 20px; /* 十分なパディング */
         min-width: 150px; /* 最小幅を設定 */
         min-height: 50px; /* 最小高さを設定 */
     }
